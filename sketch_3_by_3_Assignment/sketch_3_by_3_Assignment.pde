@@ -3,7 +3,7 @@
 void setup()
 {
   fullScreen();
-  display();
+  DisplayOrientation();
 }
 //End setup
 
