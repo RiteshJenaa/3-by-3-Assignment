@@ -34,19 +34,18 @@ void setup()
   ptY9 = appHeight*2/3;
   ptX10 = appWidth*1/3;
   ptY10 = appHeight*2/3; 
-  ptX9 = appWidth*2/3;
-  ptY9 = appHeight*2/3;
-  /*ptX10 = ; 
-   ptY10 = ;
-   ptX11 = ;
-   ptY11 = ;
-   ptX12 = ;
-   ptY12 = ;
-   ptX13 = ;
-   ptY13 = ;
-   ptX14 = ;
-   ptY14 = ;
-   */
+  ptX11 = appWidth*2/3;
+  ptY11 = appHeight*2/3;
+  ptX12 = appWidth*3/3;
+  ptY12 = appHeight*2/3;
+  ptX13 = appWidth*0;
+  ptY13 = appHeight*3/3;
+  ptX14 = appWidth*1/3;
+  ptY14 = appHeight*3/3;
+  ptX15 = appWidth*2/3;
+  ptY15 = appHeight*3/3;
+  ptX16 = appWidth*3/3;
+  ptY16 = appHeight*3/3;
 }
 //End setup
 
@@ -55,12 +54,12 @@ void draw()
   rect(ptX1, ptY1, rectWidth, rectHeight);
   rect(ptX2, ptY2, rectWidth, rectHeight); 
   rect(ptX3, ptY3, rectWidth, rectHeight); 
-  rect(ptX4, ptY4, rectWidth, rectHeight); 
   rect(ptX5, ptY5, rectWidth, rectHeight); 
   rect(ptX6, ptY6, rectWidth, rectHeight); 
   rect(ptX7, ptY7, rectWidth, rectHeight); 
-  rect(ptX8, ptY8, rectWidth, rectHeight); 
   rect(ptX9, ptY9, rectWidth, rectHeight); 
+  rect(ptX10, ptY10, rectWidth, rectHeight); 
+  rect(ptX11, ptY11, rectWidth, rectHeight); 
   //
   fill(black);
   //
