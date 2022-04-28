@@ -73,6 +73,6 @@ void population()
   //Population
   int minordisplayDimension = appHeight; //thinking experiment 
   int canvasCentre = minordisplayDimension*1/2;
-  quitButtonSetupPopulation(canvasCentre); //Parameters
+  quitButtonSetupPopulation(); //Parameters
 }
 //End population
