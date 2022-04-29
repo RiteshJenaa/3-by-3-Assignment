@@ -1,4 +1,3 @@
-
 //Global Variables
 color black=0, red=#E01C12, resetWhite=255;
 float rectWidth, rectHeight, ptDiameter;

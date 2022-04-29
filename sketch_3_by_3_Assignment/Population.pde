@@ -18,6 +18,7 @@ void population()
   ptY[5] = ptY[6] = ptY[7] = ptY[8] = appHeight*1/3;
   ptY[9] = ptY[10] = ptY[11] = ptY[12] = appHeight*2/3;
   ptY[13] = ptY[14] = ptY[15] = ptY[16] = appHeight*3/3;
+
   /*
   for (int j=0; j<4; j++ ) {
    for (int i=1; i<ptX.length; i+=4) {
@@ -64,6 +65,7 @@ void population()
    ptY[i] = appHeight*3/3;
    }
    */
+
   //Verifying Array
   print("X-Values are:");
   printArray(ptX);
