@@ -4,6 +4,11 @@ float rectWidth, rectHeight, ptDiameter;
 int numberOfPoints = 17;
 float[] ptX = new float[numberOfPoints];
 float[] ptY = new float[numberOfPoints];
+int numberOfButtons = 4;
+float[] buttonX = new float[numberOfButtons];
+float[] buttonY = new float[numberOfButtons];
+float[] buttonWidth = new float[numberOfButtons];
+float[] buttonHeight = new float[numberOfButtons];
 //
 void setup()
 {
@@ -24,6 +29,12 @@ void draw()
   rect(ptX[9], ptY[9], rectWidth, rectHeight); 
   rect(ptX[10], ptY[10], rectWidth, rectHeight); 
   rect(ptX[11], ptY[11], rectWidth, rectHeight); 
+  //
+  fill(black);
+  rect(buttonX[1], buttonY[1], buttonWidth[1], buttonHeight[1]);
+  rect(buttonX[2], buttonY[2], buttonWidth[2], buttonHeight[2]);
+  rect(buttonX[3], buttonY[3], buttonWidth[3], buttonHeight[3]);
+  fill(resetWhite);
   //
   fill(black);
   //
