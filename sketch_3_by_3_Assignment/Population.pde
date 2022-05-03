@@ -36,25 +36,35 @@ void population()
   buttonHeight[3] = appHeight*1.0/15.0;
   //
   /*buttonX[4] = ;
-  buttonY[4] = ;
-  buttonWidth[4] = ;
-  buttonHeight[4] = ;
-  //
-  buttonX[5] = ;
-  buttonY[5] = ;
-  buttonWidth[5] = ;
-  buttonHeight[5] = ;
-  //
-  buttonX[6] = ;
-  buttonY[6] = ;
-  buttonWidth[6] = ;
-  buttonHeight[6] = ;
-  //
-  buttonX[7] = ;
-  buttonY[7] = ;
-  buttonWidth[7] = ;
-  buttonHeight[7] = ;
-  */
+   buttonY[4] = ;
+   buttonWidth[4] = ;
+   buttonHeight[4] = ;
+   //
+   buttonX[5] = ;
+   buttonY[5] = ;
+   buttonWidth[5] = ;
+   buttonHeight[5] = ;
+   //
+   buttonX[6] = ;
+   buttonY[6] = ;
+   buttonWidth[6] = ;
+   buttonHeight[6] = ;
+   //
+   buttonX[7] = ;
+   buttonY[7] = ;
+   buttonWidth[7] = ;
+   buttonHeight[7] = ;
+   //
+   buttonX[8] = ;
+   buttonY[8] = ;
+   buttonWidth[8] = ;
+   buttonHeight[8] = ;
+   //
+   buttonX[9] = ;
+   buttonY[9] = ;
+   buttonWidth[9] = ;
+   buttonHeight[9] = ;
+   */
 
   //
   printArray(buttonX);
