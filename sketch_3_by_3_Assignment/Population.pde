@@ -5,7 +5,7 @@ void population()
   //population
   rectWidth = appWidth*1/3;
   rectHeight = appHeight*1/3;
-  ptDiameter = appHeight*1/40;
+  ptDiameter = appHeight*1/44;
 
   //
 

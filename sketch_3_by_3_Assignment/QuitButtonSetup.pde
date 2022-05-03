@@ -6,8 +6,8 @@ void quitButtonSetupPopulation()
 { //
   quitButtonX = ptX[2];
   quitButtonY = ptY[2];
-  quitButtonWidth = appWidth*1/6;
-  quitButtonHeight = appHeight*1/6;
+  quitButtonWidth = appWidth*1/8;
+  quitButtonHeight = appHeight*1/8;
 }
 //End quitButtonSetup
 
