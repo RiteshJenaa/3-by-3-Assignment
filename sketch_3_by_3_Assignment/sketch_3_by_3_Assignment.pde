@@ -6,7 +6,7 @@ float rectWidth, rectHeight, ptDiameter;
 int numberOfPoints = 17;
 float[] ptX = new float[numberOfPoints];
 float[] ptY = new float[numberOfPoints];
-int numberOfButtons = 4;
+int numberOfButtons = 8;
 float[] buttonX = new float[numberOfButtons];
 float[] buttonY = new float[numberOfButtons];
 float[] buttonWidth = new float[numberOfButtons];
@@ -54,6 +54,13 @@ void draw()
     fill(black);
     rect(buttonX[3], buttonY[3], buttonWidth[3], buttonHeight[3]);
   } //button 3
+  if (mouseX>=buttonX[4] && mouseX<=buttonX[4]+buttonWidth[4] && mouseY>=buttonY[4] && mouseY<=buttonY[4]+buttonHeight[4]) {
+    fill(yellow);
+    rect(buttonX[4], buttonY[4], buttonWidth[4], buttonHeight[4]);
+  } else {
+    fill(black);
+    rect(buttonX[4], buttonY[4], buttonWidth[4], buttonHeight[4]);
+  } //button 4
   if (mouseX>=ptX[3] && mouseX<=ptX[3]+rectWidth && mouseY>=ptY[3] && mouseY<=ptY[3]+rectHeight) {
     fill(yellow);
     rect(ptX[3], ptY[3], rectWidth, rectHeight);

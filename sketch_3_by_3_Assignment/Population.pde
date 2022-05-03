@@ -34,6 +34,27 @@ void population()
   buttonY[3] = appHeight*13.0/15.0;
   buttonWidth[3] = appWidth*1.0/15.0;
   buttonHeight[3] = appHeight*1.0/15.0;
+  //
+  /*buttonX[4] = ;
+  buttonY[4] = ;
+  buttonWidth[4] = ;
+  buttonHeight[4] = ;
+  //
+  buttonX[5] = ;
+  buttonY[5] = ;
+  buttonWidth[5] = ;
+  buttonHeight[5] = ;
+  //
+  buttonX[6] = ;
+  buttonY[6] = ;
+  buttonWidth[6] = ;
+  buttonHeight[6] = ;
+  //
+  buttonX[7] = ;
+  buttonY[7] = ;
+  buttonWidth[7] = ;
+  buttonHeight[7] = ;
+  */
 
   //
   printArray(buttonX);

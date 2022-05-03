@@ -1,11 +1,11 @@
 //Global variables
 float quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight;
-color blue=#588EFF, green=#40E809, buttonColour; //Notice NightMode blue values
+color buttonColour; //Notice NightMode blue values
 //
 void quitButtonSetupPopulation()
 { //
-  quitButtonX = ptX[2];
-  quitButtonY = ptY[2];
+  quitButtonX = appWidth*4/9;
+  quitButtonY = appHeight*1/9;
   quitButtonWidth = appWidth*1/8;
   quitButtonHeight = appHeight*1/8;
 }
@@ -17,16 +17,16 @@ void quitButtonDraw()
 {
   if ( mouseX>quitButtonX && mouseX<quitButtonX+quitButtonWidth && mouseY>quitButtonY && mouseY<quitButtonY+quitButtonHeight )
   {
-    buttonColour = blue;
+    buttonColour = yellow;
   } else 
   {
-    buttonColour = green;
+    buttonColour = black;
   }
   println("X-value", quitButtonX, mouseX, quitButtonX+quitButtonWidth, "\t\t look at the middle value"); //Verifying mouseX
   println("Y-value", quitButtonY, mouseY, quitButtonY+quitButtonHeight, "\t\t look at the middle value"); //Verifying mouseX
   //
   fill(buttonColour);
-  rect( quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight );
+  rect(quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight);
   fill(resetWhite);
 }
 //End quitButtonDraw
