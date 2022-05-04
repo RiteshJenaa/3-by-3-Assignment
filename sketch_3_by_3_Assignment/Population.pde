@@ -20,21 +20,22 @@ void population()
   ptY[13] = ptY[14] = ptY[15] = ptY[16] = appHeight*3/3;
 
   //
-  buttonX[1] = appWidth*1.0/9.0; //Numerator is 1, denominator is 9 | *(1/3)*(1/3)
-  buttonY[1] = appHeight*1.0/9.0; //*1/9
-  buttonWidth[1] = appWidth*1.0/9.0; //Denominator
-  buttonHeight[1] = appHeight*1.0/9.0;
+  buttonX[1] = appWidth*(1.0/3.0)*(1.0/3.0);
+  buttonY[1] = appHeight*(1.0/3.0)*(1.0/3.0); 
+  buttonWidth[1] = appWidth*(1.0/3.0)*(1.0/3.0); 
+  buttonHeight[1] = appHeight*(1.0/3.0)*(1.0/3.0); 
   //
-  buttonX[2] = appWidth*3.0/6.0;
-  buttonY[2] = appHeight*2.0/6.0;
-  buttonWidth[2] = appWidth*1.0/6.0;
-  buttonHeight[2] = appHeight*1.0/6.0;
+  buttonX[2] = appWidth*(3.0/6.0); 
+  buttonY[2] = appHeight*(2.0/6.0); 
+  buttonWidth[2] = appWidth*(1.0/3.0)*(1.0/2.0);
+  buttonHeight[2] = appHeight*(1.0/3.0)*(1.0/2.0); 
   //
-  buttonX[3] = appWidth*11.0/15.0;
-  buttonY[3] = appHeight*13.0/15.0;
-  buttonWidth[3] = appWidth*1.0/15.0;
-  buttonHeight[3] = appHeight*1.0/15.0;
+  buttonX[3] = appWidth*(11.0/15.0); 
+  buttonY[3] = appHeight*(13.0/15.0); 
+  buttonWidth[3] = appWidth*(1.0/3.0)*(1.0/5.0);
+  buttonHeight[3] = appHeight*(1.0/3.0)*(1.0/5.0); 
   //
+
   /*buttonX[4] = ;
    buttonY[4] = ;
    buttonWidth[4] = ;
@@ -64,10 +65,25 @@ void population()
    buttonY[9] = ;
    buttonWidth[9] = ;
    buttonHeight[9] = ;
+   //
+   buttonX[10] = ;
+   buttonY[10] = ;
+   buttonWidth[10] = ;
+   buttonHeight[10] = ;
+   //
+   buttonX[11] = ;
+   buttonY[11] = ;
+   buttonWidth[11] = ;
+   buttonHeight[11] = ;
+   //
    */
 
   //
   printArray(buttonX);
+  printArray(buttonY);
+  printArray(buttonWidth);
+  printArray(buttonHeight);
+  //
   /*
   for (int j=0; j<4; j++ ) {
    for (int i=1; i<ptX.length; i+=4) {
@@ -113,6 +129,7 @@ void population()
    for (int i=13; i<ptX.length; i++) {
    ptY[i] = appHeight*3/3;
    }
+   
    */
 
   //Verifying Array
