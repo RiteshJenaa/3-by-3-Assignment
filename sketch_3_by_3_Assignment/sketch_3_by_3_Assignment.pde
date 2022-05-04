@@ -1,12 +1,13 @@
 //Global Variables
-color black=0, resetWhite=255;
+
+color black=0, resetWhite=255, pink=#FFD8FF;
 color red=color(255, 0, 0), yellow=color(255, 255, 0);
-Boolean turnOnYellow=false;
+Boolean turnOnYellow=false, turnOnPink=false;
 float rectWidth, rectHeight, ptDiameter;
 int numberOfPoints = 17;
 float[] ptX = new float[numberOfPoints];
 float[] ptY = new float[numberOfPoints];
-int numberOfButtons = 8;
+int numberOfButtons = 12;
 float[] buttonX = new float[numberOfButtons];
 float[] buttonY = new float[numberOfButtons];
 float[] buttonWidth = new float[numberOfButtons];
@@ -23,7 +24,12 @@ void setup()
 void draw()
 {
   rect(ptX[1], ptY[1], rectWidth, rectHeight);
-  rect(ptX[2], ptY[2], rectWidth, rectHeight); 
+  //
+  if ( turnOnYellow==true ) fill(yellow);
+  if ( turnOnPink==true ) fill(pink);
+  rect(ptX[2], ptY[2], rectWidth, rectHeight); //change color of RECT(2)
+  fill(resetWhite);
+  //
   rect(ptX[3], ptY[3], rectWidth, rectHeight); 
   rect(ptX[5], ptY[5], rectWidth, rectHeight); 
   rect(ptX[6], ptY[6], rectWidth, rectHeight); 
@@ -31,6 +37,7 @@ void draw()
   rect(ptX[9], ptY[9], rectWidth, rectHeight); 
   rect(ptX[10], ptY[10], rectWidth, rectHeight); 
   rect(ptX[11], ptY[11], rectWidth, rectHeight); 
+  //
   //
   //HoverOver is YELLOW
   if (mouseX>=buttonX[1] && mouseX<=buttonX[1]+buttonWidth[1] && mouseY>=buttonY[1] && mouseY<=buttonY[1]+buttonHeight[1]) {
@@ -40,9 +47,9 @@ void draw()
     fill(black);
     rect(buttonX[1], buttonY[1], buttonWidth[1], buttonHeight[1]);
   } //button 1
-  
+
   //
-  
+
   if (mouseX>=buttonX[2] && mouseX<=buttonX[2]+buttonWidth[2] && mouseY>=buttonY[2] && mouseY<=buttonY[2]+buttonHeight[2]) {
     fill(yellow);
     rect(buttonX[2], buttonY[2], buttonWidth[2], buttonHeight[2]);
@@ -50,9 +57,9 @@ void draw()
     fill(black);
     rect(buttonX[2], buttonY[2], buttonWidth[2], buttonHeight[2]);
   } //button 2
-  
+
   //
-  
+
   if (mouseX>=buttonX[3] && mouseX<=buttonX[3]+buttonWidth[3] && mouseY>=buttonY[3] && mouseY<=buttonY[3]+buttonHeight[3]) {
     fill(yellow);
     rect(buttonX[3], buttonY[3], buttonWidth[3], buttonHeight[3]);
@@ -60,9 +67,9 @@ void draw()
     fill(black);
     rect(buttonX[3], buttonY[3], buttonWidth[3], buttonHeight[3]);
   } //button 3
-  
+
   //
-  
+
   if (mouseX>=buttonX[4] && mouseX<=buttonX[4]+buttonWidth[4] && mouseY>=buttonY[4] && mouseY<=buttonY[4]+buttonHeight[4]) {
     fill(yellow);
     rect(buttonX[4], buttonY[4], buttonWidth[4], buttonHeight[4]);
@@ -70,9 +77,9 @@ void draw()
     fill(black);
     rect(buttonX[4], buttonY[4], buttonWidth[4], buttonHeight[4]);
   } //button 4
-  
+
   //
-  
+
   if (mouseX>=ptX[3] && mouseX<=ptX[3]+rectWidth && mouseY>=ptY[3] && mouseY<=ptY[3]+rectHeight) {
     fill(yellow);
     rect(ptX[3], ptY[3], rectWidth, rectHeight);
@@ -122,6 +129,22 @@ void keyPressed()
 
 void mousePressed()
 {
+  if (mouseX>=buttonX[1] && mouseX<=buttonX[1]+buttonWidth[1] && mouseY>=buttonY[1] && mouseY<=buttonY[1]+buttonHeight[1]) {
+    println("BTN 1 Activated");
+    turnOnYellow=true;
+  }
+  if (mouseX>=buttonX[2] && mouseX<=buttonX[2]+buttonWidth[2] && mouseY>=buttonY[2] && mouseY<=buttonY[2]+buttonHeight[2]) {
+    println("BTN 2 Activated");
+    turnOnPink=true;
+  }
+  if (mouseX>=buttonX[3] && mouseX<=buttonX[3]+buttonWidth[3] && mouseY>=buttonY[3] && mouseY<=buttonY[3]+buttonHeight[3]) {
+    println("BTN 3 Activated");
+  }
+  if (mouseX>=ptX[3] && mouseX<=ptX[3]+rectWidth && mouseY>=ptY[3] && mouseY<=ptY[3]+rectHeight) {
+    println("BTN 4 Activated");
+    turnOnYellow=false;
+    turnOnPink=false;
+  }
   quitButtonMousePressed();
 }
 //End mousePressed

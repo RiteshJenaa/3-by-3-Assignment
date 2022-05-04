@@ -116,11 +116,12 @@ void population()
    */
 
   //Verifying Array
-  print("X-Values are:");
-  printArray(ptX);
-  print("Y-Values are:");
-  printArray(ptY);
-
+  /*
+   print("X-Values are:");
+   printArray(ptX);
+   print("Y-Values are:");
+   printArray(ptY);
+   */
   //Population
   int minordisplayDimension = appHeight; //thinking experiment 
   int canvasCentre = minordisplayDimension*1/2;
