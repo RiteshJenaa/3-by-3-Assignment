@@ -79,10 +79,10 @@ void population()
    */
 
   //
-  printArray(buttonX);
-  printArray(buttonY);
-  printArray(buttonWidth);
-  printArray(buttonHeight);
+  //printArray(buttonX);
+  //printArray(buttonY);
+  //printArray(buttonWidth);
+  //printArray(buttonHeight);
   //
   /*
   for (int j=0; j<4; j++ ) {
