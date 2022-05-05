@@ -26,6 +26,7 @@ void draw()
   rectSetup();
   ButtonSetup();
   quitButtonDraw();
+  QuitButtonText();
 }
 //End draw
 
