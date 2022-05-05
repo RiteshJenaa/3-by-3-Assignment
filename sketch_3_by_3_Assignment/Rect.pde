@@ -53,6 +53,6 @@ void rectSetup()
   fill(resetWhite);
 
   //
-}
 
+}
 //End rectSetup

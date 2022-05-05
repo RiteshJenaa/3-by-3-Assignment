@@ -53,11 +53,6 @@ void ButtonSetup()
   fill(black);
   fill(resetWhite);
 }
-
-//End buttonSetup
-
-//
-
 void ButtonPressed()
 {
   if (mouseX>=buttonX[1] && mouseX<=buttonX[1]+buttonWidth[1] && mouseY>=buttonY[1] && mouseY<=buttonY[1]+buttonHeight[1]) {
