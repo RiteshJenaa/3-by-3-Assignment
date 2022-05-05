@@ -18,6 +18,7 @@ void setup()
   fullScreen();
   DisplayOrientation();
   population();
+  pic1Setup();
 }
 //End setup
 
@@ -27,6 +28,7 @@ void draw()
   ButtonSetup();
   quitButtonDraw();
   QuitButtonText();
+  pic1Draw();
 }
 //End draw
 
