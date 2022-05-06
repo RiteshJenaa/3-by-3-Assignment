@@ -16,16 +16,25 @@ void QuitButtonText() {
   textFont(titleFont);
 }
 
+//
+
+void StartButtonText() {
+  fill(blue);
+  textAlign (CENTER, CENTER);
+  textFont(titleFont, 40);
+  text(start, buttonX[4], buttonY[4], rectWidth, rectHeight);
+  fill(resetWhite);
+  textFont(titleFont);
+}
+
+//
+
 /* void restartText() {
   textAlign (CENTER, CENTER);
   textFont(titleFont, 25);
   text(restart, restartButtonX, restartButtonY, restartButtonWidth, restartButtonHeight);
   fill(white);
   textFont(titleFont);
-}
-
-void textSetup()
-{
 }
 
 */

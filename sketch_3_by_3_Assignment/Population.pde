@@ -20,6 +20,7 @@ void population()
   ptY[13] = ptY[14] = ptY[15] = ptY[16] = appHeight*3/3;
 
   //
+
   buttonX[1] = appWidth*(1.0/3.0)*(1.0/3.0);
   buttonY[1] = appHeight*(1.0/3.0)*(1.0/3.0); 
   buttonWidth[1] = appWidth*(1.0/3.0)*(1.0/3.0); 
@@ -35,49 +36,57 @@ void population()
   buttonWidth[3] = appWidth*(1.0/3.0)*(1.0/5.0);
   buttonHeight[3] = appHeight*(1.0/3.0)*(1.0/5.0); 
   //
-
-  /*buttonX[4] = ;
-   buttonY[4] = ;
-   buttonWidth[4] = ;
-   buttonHeight[4] = ;
-   //
-   buttonX[5] = ;
-   buttonY[5] = ;
-   buttonWidth[5] = ;
-   buttonHeight[5] = ;
-   //
-   buttonX[6] = ;
-   buttonY[6] = ;
-   buttonWidth[6] = ;
-   buttonHeight[6] = ;
-   //
-   buttonX[7] = ;
-   buttonY[7] = ;
-   buttonWidth[7] = ;
-   buttonHeight[7] = ;
-   //
-   buttonX[8] = ;
-   buttonY[8] = ;
-   buttonWidth[8] = ;
-   buttonHeight[8] = ;
-   //
-   buttonX[9] = ;
-   buttonY[9] = ;
-   buttonWidth[9] = ;
-   buttonHeight[9] = ;
-   //
-   buttonX[10] = ;
-   buttonY[10] = ;
-   buttonWidth[10] = ;
-   buttonHeight[10] = ;
-   //
-   buttonX[11] = ;
-   buttonY[11] = ;
-   buttonWidth[11] = ;
-   buttonHeight[11] = ;
-   //
-   */
-
+  buttonX[4] = appWidth*(4.0/3.0)*(1.0/3.0);
+  buttonY[4] = appHeight*(5.0/3.0)*(1.0/3.0);
+  buttonWidth[4] = appWidth*(1.0/3.0)*(1.0/3.0);
+  buttonHeight[4] = appHeight*(1.0/3.0)*(1.0/3.0);
+  //
+  buttonX[5] = appWidth*(10.0/15.0);
+  buttonY[5] = appHeight*(4.0/15.0);
+  buttonWidth[5] = appWidth*(1.0/3.0)*(1.0/5.0);
+  buttonHeight[5] = appHeight*(1.0/3.0)*(1.0/5.0);
+  //
+  buttonX[6] = appWidth*(1.0/8.0);
+  buttonY[6] = appHeight*(6.0/10.0);
+  buttonWidth[6] = appWidth*(1.0/3.0)*(1.0/5.0);
+  buttonHeight[6] = appHeight*(1.0/3.0)*(1.0/5.0);
+  //
+  buttonX[7] = appWidth*(1.0/10.0);
+  buttonY[7] = appHeight*(3.0/8.0);
+  buttonWidth[7] = appWidth*(1.0/3.0)*(1.0/5.0);
+  buttonHeight[7] = appHeight*(1.0/3.0)*(1.0/5.0);
+  //
+  buttonX[8] = appWidth*(1.0/4.0);
+  buttonY[8] = appHeight*(6.0/10.0);
+  buttonWidth[8] = appWidth*(1.0/3.0)*(1.0/5.0);
+  buttonHeight[8] = appHeight*(1.0/3.0)*(1.0/5.0);
+  //
+  buttonX[8] = appWidth*(1.0/4.0);
+  buttonY[8] = appHeight*(8.0/10.0);
+  buttonWidth[8] = appWidth*(1.0/3.0)*(1.0/5.0);
+  buttonHeight[8] = appHeight*(1.0/3.0)*(1.0/5.0);
+  //
+  buttonX[10] = appWidth*(3.0/4.0);
+  buttonY[10] = appHeight*(8.0/10.0);
+  buttonWidth[10] = appWidth*(1.0/3.0)*(1.0/5.0);
+  buttonHeight[10] = appHeight*(1.0/3.0)*(1.0/5.0);
+  //
+  buttonX[11] = appWidth*(2.0/4.0);
+  buttonY[11] = appHeight*(8.0/10.0);
+  buttonWidth[11] = appWidth*(1.0/3.0)*(1.0/5.0);
+  buttonHeight[11] = appHeight*(1.0/3.0)*(1.0/5.0) ;
+  //
+  imageWidth = rectWidth;
+  imageHeight = rectHeight;
+  //
+  pic1 = loadImage("lets-get-started.jpg");
+  pic2 = loadImage("lets-get-started.jpg");
+  //Pic Population
+  /*
+  Pic1X = width*1/3;
+  Pic1Y = height*1/3;
+  */
+  //
   titleFont = createFont("Arial", 40);
 
   //Population
