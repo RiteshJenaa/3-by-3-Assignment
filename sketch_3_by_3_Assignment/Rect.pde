@@ -1,20 +1,7 @@
 void rectSetup()
 {
   rect(ptX[1], ptY[1], rectWidth, rectHeight);
-  //
-  //if ( turnOnYellow==true ) fill(yellow);
-  //if ( turnOnPink==true ) fill(pink); //Overwrites yellow
-  //if ( turnOnBrown==true ) fill(brown); //Overwrites yellow and pink
-  //
-  if ( turnOnYellow==true ) {
-    fill(yellow);
-  } else if ( turnOnPink==true ) {
-    fill(pink);
-  } else if ( turnOnBrown==true ) {
-    fill(brown);
-  } else {
-  }
-  rect(ptX[2], ptY[2], rectWidth, rectHeight); //change color of RECT(2)
+  rect(ptX[2], ptY[2], rectWidth, rectHeight);
   fill(resetWhite);
   //
   rect(ptX[3], ptY[3], rectWidth, rectHeight); 
