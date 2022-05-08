@@ -1,12 +1,43 @@
 //Global variables
 
 //Box 5
-void box5Text() {
+/*void box5Text() {
   textAlign (CENTER, CENTER);
   textFont(titleFont, 100);
-  text(start, ptX[6], ptY[6], rectWidth, rectHeight);
+  text(start, buttonX[5], buttonY[5], buttonWidth[5], buttonHeight[5]);
+  buttonSetup5();
   textFont(titleFont);
 }
+//End box5Text
+*/
+
+//
+
+void QuitButtonText() {
+  fill(blue);
+  textAlign (CENTER, CENTER);
+  textFont(titleFont, 40);
+  text(quitText, quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight);
+  fill(resetWhite);
+  textFont(titleFont);
+}
+//End quitButtonText
+
+//
+
+void StartButtonText() {
+  fill(blue);
+  textAlign (CENTER, CENTER);
+  textFont(titleFont, 40);
+  text(start, buttonX[5], buttonY[5], buttonWidth[5], buttonHeight[5]);
+  fill(resetWhite);
+  textFont(titleFont);
+}
+//End StartButtonText
+
+//
+
+/*
 void button1Text() {
   textAlign (CENTER, CENTER);
   textFont(buttonFont);
@@ -123,34 +154,11 @@ void restartText() {
   textFont(boxFont);
 }
 
-void QuitButtonText() {
-  fill(blue);
-  textAlign (CENTER, CENTER);
-  textFont(titleFont, 40);
-  text(quit, quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight);
-  fill(resetWhite);
-  textFont(titleFont);
-}
-
-//
-
-void StartButtonText() {
-  fill(blue);
-  textAlign (CENTER, CENTER);
-  textFont(titleFont, 40);
-  text(start, buttonX[4], buttonY[4], rectWidth, rectHeight);
-  fill(resetWhite);
-  textFont(titleFont);
-}
-
-//
-
-/* void restartText() {
+ void restartText() {
   textAlign (CENTER, CENTER);
   textFont(titleFont, 25);
   text(restart, restartButtonX, restartButtonY, restartButtonWidth, restartButtonHeight);
   fill(white);
   textFont(titleFont);
 }
-
 */

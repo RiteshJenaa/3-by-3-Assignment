@@ -1,10 +1,11 @@
 //Global Variables
-PImage jpg;
-PImage pic1, pic2, pic3;
+PImage pic1, pic2, pic3, pic4, pic5, pic6;
 float rectXPic1, rectYPic1, rectWidthPic1, rectHeightPic1;
 float rectXPic2, rectYPic2, rectWidthPic2, rectHeightPic2;
 float rectXPic3, rectYPic3, rectWidthPic3, rectHeightPic3;
-int pic1X, pic1Y, pic2X, pic2Y, pic3X, pic3Y, pic4X, pic4Y, pic5X, pic5Y, pic6X, pic6Y;
+float rectXPic4, rectYPic4, rectWidthPic4, rectHeightPic4;
+float rectXPic5, rectYPic5, rectWidthPic5, rectHeightPic5;
+float rectXPic6, rectYPic6, rectWidthPic6, rectHeightPic6;
 
 float pic1WidthAdjusted, pic1HeightAdjusted, pic2WidthAdjusted, pic2HeightAdjusted;
 int largerPic1Dimension, smallerPic1Dimension, largerPic2Dimension, smallerPic2Dimension;
@@ -17,35 +18,23 @@ void picPopulation()
   pic1 = loadImage("lets-get-started.jpg"); //Dimension: 800 x 560, width and height
   pic2 = loadImage("lets-get-started.jpg"); //Dimension: 800 x 560, width and height
   pic3 = loadImage("lets-get-started.jpg"); //Dimension: 800 x 560, width and height
+  pic4 = loadImage("lets-get-started.jpg"); //Dimension: 800 x 560, width and height
+  pic5 = loadImage("lets-get-started.jpg"); //Dimension: 800 x 560, width andptX[6]ic6 = loadImage(ptY[6].jpg")
+  rectWidthPic1 =  rectWidth;
+  rectHeightPic1 = rectHeight;; //Dimension: 800 x 560, width and height
 
-  pic1X = width*1/3;
-  pic1Y = height*1/3;
-  pic2X = width*2/3;
-  pic2Y = height*1/3;
-  pic3X = width*0;
-  pic3Y = height*0;
-  pic4X = width*0;
-  pic4Y = height*1/3;
-  pic5X = width*0;
-  pic5Y = height*2/3;
-  pic6X = width*2/3;
-  pic6Y = height*0;
-
-  rectXPic1=ptX[5];
-  rectYPic1=ptY[5];
-  rectWidthPic1=rectWidth;
-  rectHeightPic1=rectHeight;
-  //
-  rectXPic2=ptX[2];
-  rectYPic2=ptY[2];
-  rectWidthPic2=rectWidth;
-  rectHeightPic2=rectHeight;
-  //
-  /*rectXPic3=ptX[6];
-   rectYPic3=ptY[6];
-   rectWidthPic3=rectWidth;
-   rectHeightPic3=rectHeight;
-   */
+  rectXPic1 = displayWidth*1/3;
+  rectYPic1 = displayHeight*1/3;
+  rectXPic2 = displayWidth*2/3;
+  rectYPic2 = displayHeight*1/3;
+  rectXPic3 = displayWidth*0;
+  rectYPic3 = displayHeight*0;
+  rectXPic4 = displayWidth*0;
+  rectYPic4 = displayHeight*1/3;
+  rectXPic5 = displayWidth*0;
+  rectYPic5 = displayHeight*2/3;
+  rectXPic6 = displayWidth*2/3;
+  rectYPic6 = displayHeight*0;
 
   //Population
   int minordisplayDimension = appHeight; //thinking experiment 
@@ -55,9 +44,9 @@ void picPopulation()
 //End picPopulation
 
 /*void PicBooleanDraw()
-{
-  if (turnOnPic1==true) pic(pic1, rectXPic1, rectYPic1, rectWidthPic1, rectHeightPic1);
-  if (turnOnPic2==true) pic(pic2, rectXPic2, rectYPic2, rectWidthPic2, rectHeightPic2);
-}
-//End PicBooleanDraw
-*/
+ {
+ if (turnOnPic1==true) pic(pic1, rectXPic1, rectYPic1, rectWidthPic1, rectHeightPic1);
+ if (turnOnPic2==true) pic(pic2, rectXPic2, rectYPic2, rectWidthPic2, rectHeightPic2);
+ }
+ //End PicBooleanDraw
+ */

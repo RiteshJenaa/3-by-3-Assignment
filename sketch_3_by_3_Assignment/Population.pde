@@ -42,14 +42,14 @@ void buttonPopulation()
   buttonHeight[3] = appHeight*(1.0/3.0)*(1.0/5.0); 
   //
   buttonX[4] = appWidth*(4.0/3.0)*(1.0/3.0);
-  buttonY[4] = appHeight*(5.0/3.0)*(1.0/3.0);
+  buttonY[4] = appHeight*(6.0/3.0)*(1.0/3.0);
   buttonWidth[4] = appWidth*(1.0/3.0)*(1.0/3.0);
   buttonHeight[4] = appHeight*(1.0/3.0)*(1.0/3.0);
   //
-  buttonX[5] = appWidth*(10.0/15.0);
-  buttonY[5] = appHeight*(4.0/15.0);
-  buttonWidth[5] = appWidth*(1.0/3.0)*(1.0/5.0);
-  buttonHeight[5] = appHeight*(1.0/3.0)*(1.0/5.0);
+  buttonX[5] = appWidth*4/9;
+  buttonY[5] = appHeight*2/9;
+  buttonWidth[5] = appWidth*1/8;
+  buttonHeight[5] = appHeight*1/9;
   //
   buttonX[6] = appWidth*(1.0/8.0);
   buttonY[6] = appHeight*(6.0/10.0);
