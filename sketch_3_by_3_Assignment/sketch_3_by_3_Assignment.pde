@@ -5,7 +5,6 @@ float restartButtonX, restartButtonY, restartButtonWidth, restartButtonHeight;
 Boolean turnOnYellow=false, turnOnPink=false, turnOnBrown=false;
 Boolean box1On = false, box2On = false, box3On = false, box4On = false, box5On = false, box6On = false, box7On = false;
 float rectWidth, rectHeight, ptDiameter;
-float imageWidth, imageHeight;
 int numberOfPoints = 17;
 float[] ptX = new float[numberOfPoints];
 float[] ptY = new float[numberOfPoints];
@@ -23,13 +22,14 @@ void setup()
   rectSetup();
   buttonPopulation();
   picPopulation();
-  titleFont = createFont ("Cambria", 25);
+  titleFont = createFont ("Cambria", 30);
 }
 //End setup
 
 void draw()
 {
-  box5();
+  box1();
+  //box5();
   buttonSetup5();
   buttonSetup1();
   buttonSetup2();
@@ -58,7 +58,7 @@ void keyPressed()
 void mousePressed()
 {
   {
-    if ( mouseX>=buttonX[5] && mouseX<=buttonX[5]+buttonWidth[5] && mouseY>=buttonY[5] && mouseY<=buttonY[5]+buttonHeight[5] ) box5On = true;
+    if ( mouseX>=buttonX[5] && mouseX<=buttonX[5]+buttonWidth[5] && mouseY>=buttonY[5] && mouseY<=buttonY[5]+buttonHeight[5] ) box3On = true;
     if ( mouseX>=buttonX[1] && mouseX<=buttonX[1]+buttonWidth[1] && mouseY>=buttonY[1] && mouseY<=buttonY[1]+buttonHeight[1] ) box1On = true;
     if ( mouseX>=buttonX[2] && mouseX<=buttonX[2]+buttonWidth[2] && mouseY>=buttonY[2] && mouseY<=buttonY[2]+buttonHeight[2] ) box2On = true;
     if ( mouseX>=buttonX[3] && mouseX<=buttonX[3]+buttonWidth[3] && mouseY>=buttonY[3] && mouseY<=buttonY[3]+buttonHeight[3] ) box3On = true;
@@ -66,13 +66,6 @@ void mousePressed()
     if ( mouseX>=buttonX[6] && mouseX<=buttonX[6]+buttonWidth[6] && mouseY>=buttonY[6] && mouseY<=buttonY[6]+buttonHeight[6] ) box6On = true;
     if ( mouseX>=buttonX[7] && mouseX<=buttonX[7]+buttonWidth[7] && mouseY>=buttonY[7] && mouseY<=buttonY[7]+buttonHeight[7] ) box7On = true;
     //
-    if ( mouseX>=buttonX[5] && mouseX<=buttonX[5]+buttonWidth[5] && mouseY>=buttonY[5] && mouseY<=buttonY[5]+buttonHeight[5] ) {
-        box5On = true;
-      } else {
-          box5On = false;
-        }
-      }
-    
     if ( mouseX>=buttonX[1] && mouseX<=buttonX[1]+buttonWidth[1] && mouseY>=buttonY[1] && mouseY<=buttonY[1]+buttonHeight[1] ) {
       turnOnBrown = true;
       turnOnPink = false;
@@ -105,8 +98,8 @@ void mousePressed()
       turnOnPink = false;
       turnOnYellow = false;
     }
-  quitButtonMousePressed();
-}
-//End mousePressed
+    quitButtonMousePressed();
+  }
+  //End mousePressed
 
-//End main program
+  //End main program
