@@ -1,6 +1,4 @@
 //Global Variables
-
-
 String box3Text= "“I am so clever that sometimes I don't understand a single word of what I am saying.” -Oscar Wilde";
 String box4Text= "“I'm not stupid. I'm just too lazy to show how smart I am” -Oreiki Houtarou, Hyouka";
 String box5Text= "The buttons below change the colour of the eyes in the box to the right:";
@@ -12,12 +10,9 @@ PFont titleFont;
 color blue=color(238,61,99);
 
 void box5() {
-  image(pic1, picX, picY, imageWidth, imageHeight);
+  image(pic1, pic1X, pic1Y, imageWidth, imageHeight);
   box5Text();
-  button1();
-  line(pt6X, pt6Y, pt7X, pt7Y); //because the pic overlaps the border
-  line(pt6X, pt6Y, pt10X, pt10Y);
-  line(pt10X, pt10Y, pt11X, pt11Y); //the button overlaps the lines too
+  button5();
 }
 
 void box6() {

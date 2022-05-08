@@ -28,10 +28,21 @@ void setup()
 
 void draw()
 {
-  ButtonSetup();
+  buttonSetup1();
+  buttonSetup2();
+  buttonSetup3();
+  buttonSetup4();
+  buttonSetup5();
+  buttonSetup6();
+  buttonSetup7();
+  buttonSetup8();
+  buttonSetup9();
+  buttonSetup10();
+  buttonSetup11();
   quitButtonDraw();
   QuitButtonText();
   StartButtonText();
+  box5();
   //PicBooleanDraw();
 }
 //End draw

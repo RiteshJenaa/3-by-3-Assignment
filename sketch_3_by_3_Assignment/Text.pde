@@ -3,9 +3,9 @@
 //Box 5
 void box5Text() {
   textAlign (CENTER, CENTER);
-  textFont(boxFont, 100);
-  text(start, pt6X, pt6Y, rectWidth, rectHeight);
-  textFont(boxFont);
+  textFont(titleFont, 100);
+  text(start, ptX[6], ptY[6], rectWidth, rectHeight);
+  textFont(titleFont);
 }
 void button1Text() {
   textAlign (CENTER, CENTER);
